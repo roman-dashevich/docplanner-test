@@ -1,0 +1,12 @@
+[
+  {
+    "id": 0,
+    "name": "Adoring Shtern",
+    "error": false
+  },
+  {
+    "id": 1,
+    "name": "Brave Ramanujan",
+    "error": true
+  }
+]

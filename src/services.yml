@@ -1,0 +1,24 @@
+# Services configuration example for Symfony
+# I'm assuming that MonologLogger is not an application-wide used logger
+
+services:
+
+  App\MonologLogger: ~
+
+  App\Repository\DoctorsRepository: ~
+  App\Repository\SlotsRepository: ~
+
+  App\Request\Request:
+    arguments:
+      - '%env(ENDPOINT)%'
+      - '%env(USERNAME)%'
+      - '%env(PASSWORD)%'
+
+  App\Request\DoctorsRequest: ~
+  App\Request\SlotsRequest:
+    arguments:
+      - App\Request\Request
+      - App\MonologLogger
+
+  App\DoctorSlotsSynchronizer: ~
+
