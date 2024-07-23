@@ -1,0 +1,14 @@
+[
+  {
+    "doctorId": 0,
+    "start": -3,
+    "end": 34,
+    "stale": false
+  },
+  {
+    "doctorId": 0,
+    "start": 5,
+    "end": 25,
+    "stale": true
+  }
+]
